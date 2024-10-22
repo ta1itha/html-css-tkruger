@@ -1,9 +1,52 @@
 *, *:before, *:after {
-  box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 body {
-  box-sizing: border-box;
-  min-height: 100vh;
-  margin: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url('../assets/images/laptop.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+    padding-right: 30px;
+    font-size: 1.5rem;
+}
+
+a:hover {
+    color: orangered;
+}
+
+main {
+    flex-grow: 1;
+}
+
+/* Footer Section - inconsistent styles */
+.footerSection p {
+    font-size: 12px;
+    color: black;
+    text-align: center;
+    margin: 20px;
+}
+
+.footerSection {
+    margin-top: auto;
+    /* Pushes the footer to the bottom if content is short */
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
 }

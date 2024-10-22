@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Bad CSS Practices</title>
+    <link rel="stylesheet" href="./css/gallery.css">
+</head>
+
+<body>
+    <header>
+        <nav class="galleryMenu">
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+            <a href="#">Careers</a>
+        </nav>
+    </header>
+    <main>
+        <section class="mainSection">
+            <section class="aboutSection">
+                <h2>About This Gallery</h2>
+                <p>This image gallery demonstrates how not to write CSS by neglecting best practices such as logical
+                    grouping, consistency, reuse, modularity, and naming conventions.</p>
+            </section>
+
+            <!-- Block Section (for bad practices demonstration) -->
+            <section>
+                <h2>Bad CSS Practice Blocks</h2>
+                <div class="blockContainer">
+                    <div class="block block1">
+                        <p>This is Block 1 with bad CSS practices.</p>
+                    </div>
+                    <div class="block block2">
+                        <p>This is Block 2 with bad CSS practices.</p>
+                    </div>
+                    <div class="block block3">
+                        <p>This is Block 3 with bad CSS practices.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="gallerySection">
+                <h2>Image Gallery</h2>
+                <div class="galleryContainer">
+                    <div class="imageItem"><img src="https://via.placeholder.com/150" alt="Image 1"></div>
+                    <div class="imageItem"><img src="https://via.placeholder.com/150" alt="Image 2"></div>
+                    <div class="imageItem"><img src="https://via.placeholder.com/150" alt="Image 3"></div>
+                    <div class="imageItem"><img src="https://via.placeholder.com/150" alt="Image 4"></div>
+                    <div class="imageItem"><img src="https://via.placeholder.com/150" alt="Image 5"></div>
+                    <div class="imageItem"><img src="https://via.placeholder.com/150" alt="Image 6"></div>
+                    <div class="imageItem"><img src="https://via.placeholder.com/150" alt="Image 7"></div>
+                    <div class="imageItem"><img src="https://via.placeholder.com/150" alt="Image 8"></div>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer class="footerSection">
+        <p>&copy; 2024 My Image Gallery</p>
+    </footer>
+</body>
+
+</html>

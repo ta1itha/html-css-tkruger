@@ -1,0 +1,103 @@
+/* Use import to split up your CSS into manageable chunks */
+@import url('/_reset.css');
+@import url('/_variables.css');
+
+/* Gallery */
+.galleryMenu {
+    background-image: url("../assets/images/triangle.png");
+    height: 6vh;
+    margin-bottom: -30px;
+    display: flex;
+}
+
+.galleryMenu a {
+    color: white;
+    margin: 20px;
+}
+
+.mainSection {
+    background-color: bisque;/* Your desired background color */
+    min-height: 100vh;/* Ensures it takes up full height of the page */
+}
+
+.aboutSection {
+    padding: 20px;
+    margin-top: 30px;
+    background-color:
+    border: 1px solid black;
+}
+
+.aboutSection p {
+    font-size: var(--re);
+    color: black;
+    margin: 10px;
+}
+
+/* Avoiding Reuse - Creating Unnecessary Classes */
+.blockContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin: 20px;
+    border: 2px solid var(--color-secondary);
+}
+
+.block {
+    padding: 130px;
+    border: 1px solid black;
+}
+
+.block1 {
+    background-color: lightblue;
+}
+
+.block1:hover {
+    opacity: 0.7;
+    transform: scale(0.98);
+}
+
+.block2 {
+    background-color: lightgreen;
+}
+
+.block2:hover {
+    opacity: s0.7;
+    transform: scale(0.98);
+}
+
+.block3 {
+    background-color: lightcoral;
+}
+
+.block3:hover {
+    opacity: 0.7;
+    transform: scale(0.98);
+}
+
+/* Repetitive Flexbox without Reuse */
+.gallerySection {
+    padding: 20px;
+    margin: 20px;
+}
+
+.gallerySection h2 {
+    font-size: 25px;
+    color: darkblue;
+    margin-bottom: 20px;
+}
+
+/* Inconsistent Formatting */
+.galleryContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.imageItem {
+    width: 150px;
+    margin: 10px;
+}
+
+.imageItem img {
+    max-width: 100%;
+}
